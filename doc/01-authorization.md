@@ -29,8 +29,6 @@ Redirects the user to the endpoint with query strings:
 http://sb.apicul.us/authorize?response_type=code&client_id={{app_key}}&redirect_uri={{redirect_uri}}&scope=personal.basic&state=111546873.221
 ```
 
-#### Response (Authorization Code Grant)
-
 Once the user finished authorization, the server will redirect him to {{redirect_uri}} with query strings:
 
 * **code**: The Authorization Code generated
@@ -40,10 +38,43 @@ Once the user finished authorization, the server will redirect him to {{redirect
 {{redirect_uri}}?code={{authorization_code}}&state=111546873.221
 ```
 
+Then request for a Access Token using the code.
+
+#### Request (
+
 ## Access token
 
 #### Endpoint
 
 ```
-http://api.sb.apicul.us/oauth/token
+http://api.sb.apicul.us/token
+```
+
+#### Request
+
+* **grant_type**=authorization_code
+* **code** The Authorization Code just got
+
+```
+POST /token HTTP/1.1
+Host: api.sb.apicul.us
+Authorization: Basic {{appkey:appsecret}}
+Content-Type: application/x-www-form-urlencoded
+
+grant_type=authorization_code&code={{authorization_code}}
+```
+
+#### Response
+
+```
+HTTP/1.1 200 OK
+Content-Type: application/json
+Cache-Control: no-store
+
+{
+  "access_token": "the_access_token",
+  "token_type": "Bearer",
+  "expires_in": 3600,
+  "refresh_token": "the_refresh_token"
+}
 ```
