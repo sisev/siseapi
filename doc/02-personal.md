@@ -1,13 +1,11 @@
-Personal
+Personal API
 ==========
 
-## Personal information
+> Stability: 1 - Experimental
 
-#### Endpoint
+## GET /personal/info
 
-```
-http://api.sb.apicul.us/personal/info
-```
+Get personal information
 
 #### Request
 
