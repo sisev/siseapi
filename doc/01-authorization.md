@@ -44,15 +44,11 @@ Once the user finished authorization, the server will redirect him to {{redirect
 
 Then request for a Access Token using the code.
 
-#### Request (
+## POST /token
 
-## Access token
+> Authorization: Basic
 
-#### Endpoint
-
-```
-http://api.sb.apicul.us/token
-```
+Get access token
 
 #### Request
 
