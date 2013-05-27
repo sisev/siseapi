@@ -5,6 +5,8 @@ Personal API
 
 ## GET /personal/info
 
+> Authorization: Bearer
+
 Get personal information
 
 #### Request
