@@ -1,16 +1,28 @@
 Calendar API
 ==========
 
-> 稳定性：1 - 试验
+> Stability: 1 - Experimental
 
-## GET /calendar
+## GET /calendar/now
 
-> 权限鉴定：公开
+> Authorization: Public
 
-获取校历
+Get calendar of current year
+
+## GET /calendar/:year
+
+> Authorization: Public
+
+Get structured calendar of specified year
 
 ## GET /calendar/week
 
-> 权限鉴定：公开
+> Authorization: Public
 
-获取当前是第几周
+Get which week is this week
+
+## GET /calendar/week/:time
+
+> Authorization: Public
+
+Get which week is the specified time
