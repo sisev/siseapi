@@ -1,5 +1,9 @@
-Authorization
+Authorization API
 ==========
+
+> Stability: 1 - Experimental
+
+Using OAuth 2.0 for authorization.
 
 Supported Authorization Grants:
 
