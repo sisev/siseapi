@@ -1,14 +1,16 @@
 Calendar API
 ==========
 
+> 稳定性：1 - 试验
+
 ## GET /calendar
 
-> Authorization: Public
+> 权限鉴定：公开
 
 获取校历
 
 ## GET /calendar/week
 
-> Authorization: Public
+> 权限鉴定：公开
 
 获取当前是第几周
