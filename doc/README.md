@@ -6,5 +6,5 @@ API Documentation
 * [Courses](courses.md)
 * [Calendar](calendar.md)
 * [Mail](mail.md)
-* [Payment](payment.md)(Advanced)
-* [Library](library.md)(Advanced)
+* [Payment](payment.md) (Advanced)
+* [Library](library.md) (Advanced)
