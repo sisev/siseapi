@@ -3,17 +3,48 @@ Courses API
 
 > Stability: 1 - Experimental
 
+
 ## GET /courses/all
 
-> Authorization: Public
+> Authorization: Basic
 
 Get all availible courses
 
-## GET /courses/list
+
+## GET /courses/mine
 
 > Authorization: Bearer
 
 Get courses list of user
+
+
+## GET /courses/:course_id
+
+> Authorization: Basic
+
+Get details of specified course
+
+
+## GET /courses/:course_id/result
+
+> Authorization: Bearer
+
+Get user's achivements of specified course
+
+
+## GET /courses/exams
+
+> Authorization: Bearer
+
+Get examinations schedule
+
+
+## GET /courses/reexams
+
+> Authorization: Bearer
+
+Get re-examinations schedule
+
 
 ## GET /courses/schedule
 
