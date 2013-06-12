@@ -32,6 +32,13 @@ Get details of specified course
 Get user's achivements of specified course
 
 
+## GET /courses/materials
+
+> Authorization: Bearer
+
+Get teaching materials
+
+
 ## GET /courses/exams
 
 > Authorization: Bearer
