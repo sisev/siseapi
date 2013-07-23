@@ -61,7 +61,7 @@ Get schedule of current semester
 
 #### Request
 
-```
+```http
 GET /courses/schedule HTTP/1.1
 Host: api.sb.apicul.us
 Authorization: Bearer {{access_token}}
@@ -72,7 +72,7 @@ Authorization: Bearer {{access_token}}
 
 #### Response
 
-```
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
