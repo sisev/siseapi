@@ -11,7 +11,7 @@ Get calendar of current year
 
 #### Request
 
-```
+```http
 GET /calendar/now HTTP/1.1
 Host: api.sb.apicul.us
 Authorization: Basic {{appkey:appsecret}}
@@ -19,7 +19,7 @@ Authorization: Basic {{appkey:appsecret}}
 
 #### Response
 
-```
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
