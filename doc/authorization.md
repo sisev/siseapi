@@ -55,7 +55,7 @@ Get access token
 * **grant_type**=authorization_code
 * **code** The Authorization Code just got
 
-```
+```http
 POST /token HTTP/1.1
 Host: api.sb.apicul.us
 Authorization: Basic {{appkey:appsecret}}
@@ -66,7 +66,7 @@ grant_type=authorization_code&code={{authorization_code}}
 
 #### Response
 
-```
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 Cache-Control: no-store
