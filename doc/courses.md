@@ -1,59 +1,60 @@
 Courses API
 ==========
 
+> Version: 1
 > Stability: 1 - Experimental
 
 
-## GET /courses/all
+## GET /courses/v1/courses/availible
 
 > Authorization: Basic
 
 Get all availible courses
 
 
-## GET /courses/mine
+## GET /courses/v1/courses
 
 > Authorization: Bearer
 
 Get courses list of user
 
 
-## GET /courses/:course_id
+## GET /courses/v1/courses/:course_id
 
 > Authorization: Basic
 
 Get details of specified course
 
 
-## GET /courses/:course_id/result
+## GET /courses/v1/courses/:course_id/result
 
 > Authorization: Bearer
 
 Get user's achivements of specified course
 
 
-## GET /courses/materials
+## GET /courses/v1/materials
 
 > Authorization: Bearer
 
 Get teaching materials
 
 
-## GET /courses/exams
+## GET /courses/v1/exams
 
 > Authorization: Bearer
 
 Get examinations schedule
 
 
-## GET /courses/reexams
+## GET /courses/v1/reexams
 
 > Authorization: Bearer
 
 Get re-examinations schedule
 
 
-## GET /courses/schedule
+## GET /courses/v1/schedule
 
 > Authorization: Bearer
 
