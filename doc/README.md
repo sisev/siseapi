@@ -5,5 +5,5 @@ API Documentation
 * [Personal](personal.md)
 * [Courses](courses.md)
 * [Calendar](calendar.md)
-* [Payment](payment.md) (Advanced)
+* [Payment](payment.md)
 * [Library](library.md) (Advanced)
