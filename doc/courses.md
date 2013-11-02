@@ -80,24 +80,91 @@ Content-Type: application/json
 {
   "year": 2013,
   "semester": 1,
-  "periods": [
-    { "start": "09:00", "end": "10:20" },
-    { "start": "10:40", "end": "12:00" },
-    { "start": "14:00", "end": "15:20" },
-    { "start": "15:30", "end": "16:50" }
-  ],
   "schedule": [
-    [
-      [{
-        "name": "HTML5 网站开发",
-        "class": "ML",
-        "teacher": "哈哈",
-        "weeks": [1, 2, 3, 4, 5, 6, 7],
-        "start": 1,
-        "end": 7,
-        "span": 1
-      }]
-    ]
+    {
+      "name": "计算机编程基础",
+      "classes": [
+        {
+          "code": "ANH",
+          "teacher": "徐礼国",
+          "schedule": [
+            {
+              "location": "C301",
+              "week": {
+                "start": 6,
+                "end": 16,
+                "interval": 2,
+                "day": 0
+              },
+              "time": {
+                "start": "09:00",
+                "end": "10:20",
+                "time": 0
+              }
+            }
+          ]
+        },
+        {
+          "code": "ANH02",
+          "teacher": "徐礼国",
+          "schedule": [
+            {
+              "location": "T303",
+              "week": {
+                "start": 7,
+                "end": 17,
+                "interval": 2,
+                "day": 2
+              },
+              "time": {
+                "start": "19:00",
+                "end": "20:20",
+                "time": 6
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Illustrator软件应用",
+      "classes": [
+        {
+          "code": "JE",
+          "teacher": "李列锋",
+          "schedule": [
+            {
+              "location": "E103",
+              "week": {
+                "start": 1,
+                "end": 8,
+                "interval": 1,
+                "day": 0
+              },
+              "time": {
+                "start": "10:40",
+                "end": "12:00",
+                "time": 1
+              }
+            },
+            {
+              "location": "E103",
+              "week": {
+                "start": 1,
+                "end": 8,
+                "interval": 1,
+                "day": 2
+              },
+              "time": {
+                "start": "09:00",
+                "end": "10:20",
+                "time": 0
+              }
+            }
+          ]
+        }
+      ]
+    }
   ]
 }
 ```
